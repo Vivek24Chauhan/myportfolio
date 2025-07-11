@@ -592,6 +592,20 @@ section {
     text-shadow: 0 0 5px #00ff00;
 }
 
+/* FORCE SKILLS TO ALWAYS SHOW */
+.skill-tag {
+    display: inline-block !important;
+    opacity: 1 !important;
+    color: #00ff00 !important;
+    background: rgba(0,255,0,0.1) !important;
+    border: 1px solid #00ff00 !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 4px !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    box-shadow: 0 0 5px rgba(0,255,0,0.3) !important;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
