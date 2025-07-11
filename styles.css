@@ -703,15 +703,40 @@ section {
         gap: 1rem;
     }
 
-    .timeline::before {
-        left: 20px;
+    .timeline {
+        padding-left: 0;
+        border-left: none;
     }
-
     .timeline-item {
         width: 100%;
+        margin: 2rem 0;
+        padding-left: 0;
+        border-left: none;
+        position: static;
+        box-shadow: 0 0 10px rgba(0,255,0,0.1);
+    }
+    .timeline-marker {
+        left: 0;
+        margin: 0 0 1rem 0;
+        position: static;
+        display: block;
+    }
+    .timeline-content {
+        padding: 1rem;
+        margin-left: 0;
+        background: #181818;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,255,0,0.05);
+    }
+
+    .timeline-item:nth-child(odd) {
         left: 0 !important;
-        padding-left: 3rem !important;
-        padding-right: 0 !important;
+        padding-right: 2rem !important;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0 !important;
+        padding-left: 2rem !important;
     }
 
     .timeline-marker {
